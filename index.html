@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan Hegde | Personal Portfolio - MCA Student & Aspiring Software Engineer</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Personal Portfolio of Darshan Hegde, an MCA student, Aspiring Software Engineer, and Cloud & DevOps Enthusiast. Explore my projects, certifications, education, and skills.">
+    <meta name="keywords" content="Darshan Hegde, Portfolio, MCA, BMSIT, BCA, Software Engineer, Cloud Computing, DevOps, AWS, MERN Stack, Bengaluru">
+    <meta name="author" content="Darshan Hegde">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Darshan Hegde | Personal Portfolio">
+    <meta property="og:description" content="Explore my projects, education, certifications, and tech stack in Cloud, DevOps, and Full Stack Development.">
+    <meta property="og:image" content="assets/images/profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Darshan Hegde | Personal Portfolio">
+    <meta property="twitter:description" content="Explore my projects, education, certifications, and tech stack in Cloud, DevOps, and Full Stack Development.">
+    <meta property="twitter:image" content="assets/images/profile.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Loading Animation -->
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">&lt;DH /&gt;</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>Darshan Hegde<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#tech-stack" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon moon-icon"></i>
+                    <i class="fas fa-sun sun-icon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Floating Particles Background -->
+        <canvas id="particles-canvas"></canvas>
+        
+        <div class="hero-content container">
+            <div class="hero-text-container scroll-reveal" data-animation="fade-in">
+                <span class="greeting-badge">Welcome to my universe</span>
+                <h1 class="hero-title">Darshan Hegde</h1>
+                <div class="typing-container">
+                    <span class="typing-prefix">I am an </span>
+                    <span id="typing-text" class="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Building scalable applications and automating deployments through modern cloud and DevOps technologies. Passionate about designing robust architectures and bridging the gap between development and operations.
+                </p>
+                <div class="hero-cta">
+                    <a href="resume.pdf" class="btn btn-primary" download="Darshan_Hegde_Resume.pdf" id="download-resume-btn">
+                        <i class="fas fa-download icon-left"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Me <i class="fas fa-arrow-right icon-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image-container scroll-reveal" data-animation="zoom-in">
+                <div class="profile-glow-ring"></div>
+                <div class="profile-frame">
+                    <img src="assets/images/profile.png" alt="Darshan Hegde Professional Portrait" class="profile-img">
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-down-indicator" aria-label="Scroll Down">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+            <span class="arrow"></span>
+        </a>
+    </section>
+
+    <!-- Main Content Container -->
+    <main>
+        <!-- About Section & Professional Profile -->
+        <section id="about" class="about-section container section-padding">
+            <h2 class="section-title scroll-reveal" data-animation="fade-in">About Me</h2>
+            <div class="about-grid">
+                <div class="about-details scroll-reveal" data-animation="slide-left">
+                    <h3 class="about-subtitle">Professional Profile</h3>
+                    <p class="about-text">
+                        I am currently pursuing my <strong>Master of Computer Applications (MCA)</strong> at the prestigious <strong>BMS Institute of Technology and Management (BMSIT)</strong> in Bengaluru. I graduated with a <strong>Bachelor of Computer Applications (BCA)</strong> from <strong>SDM Degree College, Honnavar</strong> under Karnataka University, Dharwad.
+                    </p>
+                    <p class="about-text">
+                        My technical interest lies at the intersection of Cloud Computing, DevOps architectures, and Full Stack JavaScript development. I enjoy learning modern technologies, automating software delivery workflows, and building reliable applications that solve real-world problems.
+                    </p>
+                    
+                    <!-- Stats Counter Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Technologies Mastered</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Core Projects Completed</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Professional Certs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements list -->
+                <div class="achievements-container scroll-reveal" data-animation="slide-right">
+                    <h3 class="about-subtitle">Key Achievements</h3>
+                    <ul class="achievements-list">
+                        <li class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="achievement-content">
+                                <h4>Pursuing MCA at BMSIT</h4>
+                                <p>Deepening knowledge in advanced software architecture, systems programming, and database design in Bengaluru.</p>
+                            </div>
+                        </li>
+                        <li class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                            <div class="achievement-content">
+                                <h4>Completed BCA with Distinction</h4>
+                                <p>Graduated from SDM Degree College, Honnavar, establishing a strong foundation in computer science and web technologies.</p>
+                            </div>
+                        </li>
+                        <li class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-cloud"></i></div>
+                            <div class="achievement-content">
+                                <h4>Built PortfolioOps AWS System</h4>
+                                <p>Designed and hosted a secure personal portfolio using AWS S3, with automated deployment pipelines via GitHub Actions.</p>
+                            </div>
+                        </li>
+                        <li class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-cubes"></i></div>
+                            <div class="achievement-content">
+                                <h4>Developed MERN Marketplace</h4>
+                                <p>Engineered a responsive service marketplace platform connecting users with local providers using MongoDB, Express, React, and Node.</p>
+                            </div>
+                        </li>
+                        <li class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-lightbulb"></i></div>
+                            <div class="achievement-content">
+                                <h4>Active Tech Community Member</h4>
+                                <p>Participated in various software development workshops and AI initiatives, keeping up-to-date with emerging tech.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding">
+            <div class="container">
+                <h2 class="section-title scroll-reveal" data-animation="fade-in">Education Timeline</h2>
+                
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item left scroll-reveal" data-animation="slide-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge badge-active">Currently Pursuing</div>
+                            <h3>Master of Computer Applications (MCA)</h3>
+                            <h4 class="timeline-institution">BMS Institute of Technology and Management (BMSIT)</h4>
+                            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
+                            <p class="timeline-details">
+                                Specializing in Cloud Computing, DevOps methodologies, and Enterprise Software Systems. Actively involved in labs and cloud projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item right scroll-reveal" data-animation="slide-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021 - 2024</div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge badge-completed">Completed</div>
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <h4 class="timeline-institution">SDM Degree College, Honnavar</h4>
+                            <p class="timeline-university">Affiliation: Karnataka University, Dharwad (KUD)</p>
+                            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Honnavar, Karnataka</p>
+                            <p class="timeline-details">
+                                Acquired solid foundation in computer applications, programming paradigms (C, Java, Python), database engines, and software engineering.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="tech-stack" class="tech-stack-section container section-padding">
+            <h2 class="section-title scroll-reveal" data-animation="fade-in">My Tech Stack</h2>
+            <p class="section-subtitle scroll-reveal" data-animation="fade-in">Technologies I work with daily and excel in</p>
+            
+            <div class="tech-grid">
+                <!-- HTML5 -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="1">
+                    <div class="tech-icon-container" style="--glow-color: #e34f26;">
+                        <i class="fab fa-html5 tech-icon" style="color: #e34f26;"></i>
+                    </div>
+                    <span class="tech-name">HTML5</span>
+                </div>
+                <!-- CSS3 -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="2">
+                    <div class="tech-icon-container" style="--glow-color: #1572b6;">
+                        <i class="fab fa-css3-alt tech-icon" style="color: #1572b6;"></i>
+                    </div>
+                    <span class="tech-name">CSS3</span>
+                </div>
+                <!-- JavaScript -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="3">
+                    <div class="tech-icon-container" style="--glow-color: #f7df1e;">
+                        <i class="fab fa-js tech-icon" style="color: #f7df1e;"></i>
+                    </div>
+                    <span class="tech-name">JavaScript</span>
+                </div>
+                <!-- React -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="4">
+                    <div class="tech-icon-container" style="--glow-color: #61dafb;">
+                        <i class="fab fa-react tech-icon" style="color: #61dafb;"></i>
+                    </div>
+                    <span class="tech-name">React.js</span>
+                </div>
+                <!-- Node.js -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="5">
+                    <div class="tech-icon-container" style="--glow-color: #339933;">
+                        <i class="fab fa-node-js tech-icon" style="color: #339933;"></i>
+                    </div>
+                    <span class="tech-name">Node.js</span>
+                </div>
+                <!-- MongoDB -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="6">
+                    <div class="tech-icon-container" style="--glow-color: #47a248;">
+                        <i class="fas fa-leaf tech-icon" style="color: #47a248;"></i>
+                    </div>
+                    <span class="tech-name">MongoDB</span>
+                </div>
+                <!-- MySQL -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="7">
+                    <div class="tech-icon-container" style="--glow-color: #00758f;">
+                        <i class="fas fa-database tech-icon" style="color: #00758f;"></i>
+                    </div>
+                    <span class="tech-name">MySQL</span>
+                </div>
+                <!-- Python -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="8">
+                    <div class="tech-icon-container" style="--glow-color: #3776ab;">
+                        <i class="fab fa-python tech-icon" style="color: #3776ab;"></i>
+                    </div>
+                    <span class="tech-name">Python</span>
+                </div>
+                <!-- AWS -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="9">
+                    <div class="tech-icon-container" style="--glow-color: #ff9900;">
+                        <i class="fab fa-aws tech-icon" style="color: #ff9900;"></i>
+                    </div>
+                    <span class="tech-name">AWS</span>
+                </div>
+                <!-- Docker -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="10">
+                    <div class="tech-icon-container" style="--glow-color: #2496ed;">
+                        <i class="fab fa-docker tech-icon" style="color: #2496ed;"></i>
+                    </div>
+                    <span class="tech-name">Docker</span>
+                </div>
+                <!-- Jenkins -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="11">
+                    <div class="tech-icon-container" style="--glow-color: #d24939;">
+                        <i class="fab fa-jenkins tech-icon" style="color: #d24939;"></i>
+                    </div>
+                    <span class="tech-name">Jenkins</span>
+                </div>
+                <!-- Git -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="12">
+                    <div class="tech-icon-container" style="--glow-color: #f05032;">
+                        <i class="fab fa-git-alt tech-icon" style="color: #f05032;"></i>
+                    </div>
+                    <span class="tech-name">Git</span>
+                </div>
+                <!-- GitHub -->
+                <div class="tech-card scroll-reveal" data-animation="zoom-in" data-delay="13">
+                    <div class="tech-icon-container" style="--glow-color: #ffffff;">
+                        <i class="fab fa-github tech-icon" style="color: #a855f7;"></i>
+                    </div>
+                    <span class="tech-name">GitHub</span>
+                </div>
+            </div>
+            
+            <!-- Skill Bars container -->
+            <div class="skills-levels-container scroll-reveal" data-animation="slide-up">
+                <h3 class="skills-levels-title">Proficiency Overview</h3>
+                <div class="skill-bar-wrapper">
+                    <div class="skill-info">
+                        <span>Programming (C, C++, Java, Python, JS)</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-wrapper">
+                    <div class="skill-info">
+                        <span>Web Development (HTML, CSS, React.js, Node.js)</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-wrapper">
+                    <div class="skill-info">
+                        <span>Databases (MongoDB, MySQL, PostgreSQL)</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-wrapper">
+                    <div class="skill-info">
+                        <span>Cloud & DevOps (AWS, GitHub Actions, Docker, Jenkins)</span>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" data-width="75%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <h2 class="section-title scroll-reveal" data-animation="fade-in">Featured Projects</h2>
+                
+                <!-- Project Filter Menu -->
+                <div class="projects-filter scroll-reveal" data-animation="fade-in">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="devops">DevOps & Cloud</button>
+                </div>
+                
+                <!-- Dynamic Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project cards will be injected by JavaScript -->
+                    <div class="project-card-loading">Loading projects...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub & LinkedIn Integration Section -->
+        <section class="socials-integration-section section-padding">
+            <div class="container socials-integration-grid">
+                <!-- GitHub Card -->
+                <div class="profile-card github-card scroll-reveal" data-animation="slide-left">
+                    <div class="card-glow"></div>
+                    <div class="profile-card-header">
+                        <i class="fab fa-github profile-card-icon"></i>
+                        <div>
+                            <h3>GitHub Stats</h3>
+                            <p>@darshanhegde (Mock Analytics)</p>
+                        </div>
+                    </div>
+                    <div class="github-stats-body">
+                        <div class="github-stats-item">
+                            <span class="stat-val">18</span>
+                            <span class="stat-lbl">Repositories</span>
+                        </div>
+                        <div class="github-stats-item">
+                            <span class="stat-val">240+</span>
+                            <span class="stat-lbl">Commits (2026)</span>
+                        </div>
+                        <div class="github-stats-item">
+                            <span class="stat-val">96%</span>
+                            <span class="stat-lbl">JavaScript/Python</span>
+                        </div>
+                    </div>
+                    
+                    <!-- SVG contribution graph placeholder -->
+                    <div class="github-graph-container">
+                        <p class="graph-title">Contributions Calendar</p>
+                        <div class="github-graph-svg-wrapper">
+                            <!-- Custom SVG calendar -->
+                            <svg viewBox="0 0 450 60" class="contribution-svg">
+                                <g transform="translate(10, 10)">
+                                    <!-- Week rows representation -->
+                                    <!-- We will generate a neat grid of rectangles simulating GitHub contributions -->
+                                    <!-- JavaScript will colorize some dynamically, or we use CSS gradients -->
+                                    <script type="text/javascript">
+                                        // Just placeholder to keep it simple, we draw it statically in HTML
+                                    </script>
+                                    <!-- Row 1 -->
+                                    <rect x="0" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="15" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="30" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="45" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="60" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="75" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="90" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="105" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="4" />
+                                    <rect x="120" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="135" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="150" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="165" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="180" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="195" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="210" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="4" />
+                                    <rect x="225" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="240" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="255" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="270" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="285" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="300" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="315" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="330" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="345" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="4" />
+                                    <rect x="360" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="375" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="390" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="405" y="0" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    
+                                    <!-- Row 2 -->
+                                    <rect x="0" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="15" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="30" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="45" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="60" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="75" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="4" />
+                                    <rect x="90" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="105" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="120" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="135" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="150" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="165" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="4" />
+                                    <rect x="180" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="195" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="210" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="225" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="240" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="255" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="270" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="285" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="300" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="4" />
+                                    <rect x="315" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="330" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="345" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="360" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="375" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="390" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="4" />
+                                    <rect x="405" y="15" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+
+                                    <!-- Row 3 -->
+                                    <rect x="0" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="15" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="30" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="4" />
+                                    <rect x="45" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="60" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="75" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="90" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="105" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="120" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="4" />
+                                    <rect x="135" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="150" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="165" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="180" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="195" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="210" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="225" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="240" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="4" />
+                                    <rect x="255" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="270" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="285" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="300" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="315" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="330" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="0" />
+                                    <rect x="345" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                    <rect x="360" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="2" />
+                                    <rect x="375" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="3" />
+                                    <rect x="390" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="4" />
+                                    <rect x="405" y="30" width="10" height="10" rx="2" class="contrib-cell" data-level="1" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <!-- Pinned project snippet -->
+                    <div class="pinned-project-link">
+                        <span class="pinned-label"><i class="fas fa-thumbtack"></i> Pinned Repos:</span>
+                        <a href="https://github.com/yourusername/portfolioops" target="_blank" class="github-repo-pill">PortfolioOps</a>
+                        <a href="https://github.com/yourusername/local-service-marketplace" target="_blank" class="github-repo-pill">local-service-marketplace</a>
+                    </div>
+                    
+                    <a href="https://github.com/yourusername" target="_blank" class="btn btn-secondary card-btn">
+                        <i class="fab fa-github"></i> Visit GitHub Profile
+                    </a>
+                </div>
+
+                <!-- LinkedIn Card -->
+                <div class="profile-card linkedin-card scroll-reveal" data-animation="slide-right">
+                    <div class="card-glow"></div>
+                    <div class="profile-card-header">
+                        <i class="fab fa-linkedin profile-card-icon"></i>
+                        <div>
+                            <h3>LinkedIn Profile</h3>
+                            <p>Darshan Hegde</p>
+                        </div>
+                    </div>
+                    
+                    <div class="linkedin-body">
+                        <p class="linkedin-headline">
+                            <strong>MCA Candidate | Aspiring Software Engineer | Cloud & DevOps Practitioner</strong>
+                        </p>
+                        <p class="linkedin-summary">
+                            Actively engaging with the tech community to discuss Cloud infrastructure, DevOps pipelines, containerized microservices, and reactive full-stack web applications. Open to networking and internship opportunities.
+                        </p>
+                        <div class="linkedin-connections">
+                            <i class="fas fa-users"></i> <span>500+ Connections</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn btn-primary card-btn">
+                        <i class="fab fa-linkedin-in"></i> Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section / Gallery -->
+        <section id="certifications" class="certifications-section section-padding">
+            <div class="container">
+                <h2 class="section-title scroll-reveal" data-animation="fade-in">Certifications Gallery</h2>
+                <p class="section-subtitle scroll-reveal" data-animation="fade-in">Professional badges validation and completed trainings</p>
+                
+                <div class="certifications-grid">
+                    <!-- Cert 1: AWS Cloud Fundamentals -->
+                    <div class="cert-card scroll-reveal" data-animation="slide-up" data-delay="1">
+                        <div class="cert-image-container">
+                            <!-- Clean CSS/SVG stylized layout instead of a broken empty file -->
+                            <div class="cert-image-placeholder aws-cert">
+                                <i class="fab fa-aws cert-placeholder-logo"></i>
+                                <span>AWS Cloud Fundamentals</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">AWS Cloud Fundamentals</h3>
+                            <p class="cert-org"><i class="fas fa-building"></i> AWS Training & Certification</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt"></i> Completed: 2025</p>
+                            <div class="cert-actions">
+                                <button class="btn btn-sm btn-secondary view-cert-btn" data-cert="aws">
+                                    <i class="fas fa-eye"></i> View
+                                </button>
+                                <a href="assets/images/certificates/placeholder.png" class="btn btn-sm btn-primary" download="AWS_Cloud_Fundamentals.png">
+                                    <i class="fas fa-download"></i> Save
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2: DevOps Fundamentals -->
+                    <div class="cert-card scroll-reveal" data-animation="slide-up" data-delay="2">
+                        <div class="cert-image-container">
+                            <div class="cert-image-placeholder devops-cert">
+                                <i class="fas fa-infinity cert-placeholder-logo"></i>
+                                <span>DevOps Fundamentals</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">DevOps Fundamentals</h3>
+                            <p class="cert-org"><i class="fas fa-building"></i> Linux Foundation / Coursera</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt"></i> Completed: 2025</p>
+                            <div class="cert-actions">
+                                <button class="btn btn-sm btn-secondary view-cert-btn" data-cert="devops">
+                                    <i class="fas fa-eye"></i> View
+                                </button>
+                                <a href="assets/images/certificates/placeholder.png" class="btn btn-sm btn-primary" download="DevOps_Fundamentals.png">
+                                    <i class="fas fa-download"></i> Save
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3: Web Development Certification -->
+                    <div class="cert-card scroll-reveal" data-animation="slide-up" data-delay="3">
+                        <div class="cert-image-container">
+                            <div class="cert-image-placeholder web-cert">
+                                <i class="fas fa-code cert-placeholder-logo"></i>
+                                <span>Web Development Certification</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">Web Development Certification</h3>
+                            <p class="cert-org"><i class="fas fa-building"></i> freeCodeCamp / Udemy</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt"></i> Completed: 2024</p>
+                            <div class="cert-actions">
+                                <button class="btn btn-sm btn-secondary view-cert-btn" data-cert="web">
+                                    <i class="fas fa-eye"></i> View
+                                </button>
+                                <a href="assets/images/certificates/placeholder.png" class="btn btn-sm btn-primary" download="Web_Development_Certification.png">
+                                    <i class="fas fa-download"></i> Save
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4: Python Programming Certification -->
+                    <div class="cert-card scroll-reveal" data-animation="slide-up" data-delay="4">
+                        <div class="cert-image-container">
+                            <div class="cert-image-placeholder python-cert">
+                                <i class="fab fa-python cert-placeholder-logo"></i>
+                                <span>Python Programming</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">Python Programming Certification</h3>
+                            <p class="cert-org"><i class="fas fa-building"></i> Python Institute / Coursera</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt"></i> Completed: 2024</p>
+                            <div class="cert-actions">
+                                <button class="btn btn-sm btn-secondary view-cert-btn" data-cert="python">
+                                    <i class="fas fa-eye"></i> View
+                                </button>
+                                <a href="assets/images/certificates/placeholder.png" class="btn btn-sm btn-primary" download="Python_Programming_Certification.png">
+                                    <i class="fas fa-download"></i> Save
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 5: Database Management Certification -->
+                    <div class="cert-card scroll-reveal" data-animation="slide-up" data-delay="5">
+                        <div class="cert-image-container">
+                            <div class="cert-image-placeholder db-cert">
+                                <i class="fas fa-database cert-placeholder-logo"></i>
+                                <span>Database Management</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">Database Management</h3>
+                            <p class="cert-org"><i class="fas fa-building"></i> Oracle / Udemy</p>
+                            <p class="cert-date"><i class="far fa-calendar-alt"></i> Completed: 2024</p>
+                            <div class="cert-actions">
+                                <button class="btn btn-sm btn-secondary view-cert-btn" data-cert="database">
+                                    <i class="fas fa-eye"></i> View
+                                </button>
+                                <a href="assets/images/certificates/placeholder.png" class="btn btn-sm btn-primary" download="Database_Management_Certification.png">
+                                    <i class="fas fa-download"></i> Save
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deployment Infrastructure Visualizer (Highlighting PortfolioOps specs) -->
+        <section class="deployment-infra-section section-padding">
+            <div class="container">
+                <h2 class="section-title scroll-reveal" data-animation="fade-in">Infrastructure & Deployment Architecture</h2>
+                <p class="section-subtitle scroll-reveal" data-animation="fade-in">How my PortfolioOps and hosting assets are engineered</p>
+                
+                <div class="infra-grid">
+                    <div class="infra-visualizer scroll-reveal" data-animation="slide-left">
+                        <!-- Custom layout demonstrating Git -> Actions -> AWS -->
+                        <div class="flow-step">
+                            <div class="flow-icon"><i class="fab fa-git-alt"></i></div>
+                            <h4>1. Version Control</h4>
+                            <p>Git pushes source files to GitHub repository</p>
+                        </div>
+                        <div class="flow-arrow"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></div>
+                        <div class="flow-step">
+                            <div class="flow-icon"><i class="fab fa-github-actions"></i></div>
+                            <h4>2. CI/CD Runner</h4>
+                            <p>GitHub Actions triggers build, lints & tests files</p>
+                        </div>
+                        <div class="flow-arrow"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></div>
+                        <div class="flow-step">
+                            <div class="flow-icon"><i class="fab fa-aws"></i></div>
+                            <h4>3. Cloud Hosting</h4>
+                            <p>Assets securely synchronized and hosted on AWS S3 buckets</p>
+                        </div>
+                    </div>
+
+                    <div class="infra-details scroll-reveal" data-animation="slide-right">
+                        <h3>PortfolioOps Architecture Specs</h3>
+                        <p class="infra-p">
+                            Utilizes serverless practices to maintain 99.99% website uptime at near-zero hosting cost.
+                        </p>
+                        <ul class="infra-specs-list">
+                            <li><strong>Hosting Platform:</strong> AWS S3 (Simple Storage Service) configured for Static Website Hosting.</li>
+                            <li><strong>CI/CD Pipelines:</strong> Automated via GitHub Actions utilizing checkout and AWS S3 Sync actions.</li>
+                            <li><strong>IAM Security:</strong> Deployed with minimal authorization policy, utilizing secure secrets configurations inside GitHub settings.</li>
+                            <li><strong>Domain Delivery:</strong> Configured for secure HTTPS transfers and distribution.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding container">
+            <h2 class="section-title scroll-reveal" data-animation="fade-in">Get In Touch</h2>
+            
+            <div class="contact-grid">
+                <!-- Info cards -->
+                <div class="contact-info-container scroll-reveal" data-animation="slide-left">
+                    <h3>Contact Information</h3>
+                    <p class="contact-desc">
+                        Have a question, a project proposal, or just want to say hi? Feel free to send a message. I will do my best to respond as soon as possible.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-info-item">
+                            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Karnataka, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-container">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:your-email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container scroll-reveal" data-animation="slide-right">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Hiring" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            Send Message <i class="fas fa-paper-plane icon-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">&lt;DH /&gt;</a>
+                <p>Creating efficient cloud strategies and modern web platforms.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <div class="footer-nav-grid">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#tech-stack">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Darshan Hegde. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Certificate Lightbox Modal -->
+    <div id="cert-modal" class="modal">
+        <span class="modal-close" id="modal-close">&times;</span>
+        <div class="modal-content-wrapper">
+            <div class="modal-cert-display">
+                <div class="cert-image-placeholder-large" id="modal-cert-img-placeholder">
+                    <!-- SVG logo and content injected by JS -->
+                </div>
+            </div>
+            <div class="modal-cert-info">
+                <h3 id="modal-cert-title">Certificate Title</h3>
+                <p id="modal-cert-issuer">Issuing Organization</p>
+                <p id="modal-cert-date">Date Completed</p>
+                <div class="modal-buttons">
+                    <a href="assets/images/certificates/placeholder.png" id="modal-download-btn" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Success/Error Modal -->
+    <div id="form-modal" class="modal mini-modal">
+        <div class="mini-modal-content">
+            <span class="modal-close" id="form-modal-close">&times;</span>
+            <div id="form-modal-icon" class="form-modal-icon"></div>
+            <h3 id="form-modal-title">Status Title</h3>
+            <p id="form-modal-message">Status Message</p>
+            <button id="form-modal-btn" class="btn btn-primary">Okay</button>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

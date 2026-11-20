@@ -1,0 +1,36 @@
+[
+  {
+    "id": "portfolioops",
+    "title": "PortfolioOps",
+    "category": "devops",
+    "status": "Completed",
+    "image": "assets/images/portfolioops.png",
+    "description": "Designed and deployed a highly secure, automated personal portfolio website using AWS S3 cloud storage with custom CI/CD pipelines via GitHub Actions.",
+    "technologies": ["AWS S3", "GitHub Actions", "Git", "HTML", "CSS", "JavaScript", "IAM"],
+    "features": [
+      "Static website hosting on AWS S3 with clean routing",
+      "Automated CI/CD deployment pipeline triggering on git push",
+      "Secure IAM configuration following the principle of least privilege",
+      "Fully responsive and optimized front-end layout"
+    ],
+    "github": "https://github.com/yourusername/portfolioops",
+    "demo": "https://yourusername.github.io/portfolioops"
+  },
+  {
+    "id": "local-service-marketplace",
+    "title": "Local Service Marketplace",
+    "category": "web",
+    "status": "Completed",
+    "image": "assets/images/marketplace.png",
+    "description": "A MERN stack platform that connects users with nearby service providers for household tasks, highlighting modern full-stack engineering practices.",
+    "technologies": ["MongoDB", "Express.js", "React.js", "Node.js", "JavaScript", "CSS"],
+    "features": [
+      "Dynamic service provider discovery and matching algorithm",
+      "Secure user and provider authentication and profile management",
+      "Real-time reviews and booking status tracking",
+      "Responsive design supporting all device types"
+    ],
+    "github": "https://github.com/yourusername/local-service-marketplace",
+    "demo": "https://local-service-marketplace.example.com"
+  }
+]
